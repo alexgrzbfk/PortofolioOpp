@@ -1,0 +1,369 @@
+*{
+    background: #181C14;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Courier-prime;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'Courier-prime';
+    src: url("fonts/CourierPrime-Regular.ttf");
+}
+
+.header {
+    background-color: #697565; 
+    height: 70px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed; 
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    z-index: 3;
+}
+
+.knapper{
+    display: flex;
+    align-items: center;
+    background-color: #3C3D37;
+    color: #ECDFCC;
+    height: 50px;
+    margin-top: 10px;
+    margin-right: 15px;
+    border-style: none;
+    font-size: 25px;
+    padding-inline: 30px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.tekst{
+    background: #697565;
+    margin: 15px;
+    padding: 15px;
+    font-size: 40px;
+}
+
+.tekstbakgrunn{
+    background: #3C3D37;
+    color: #ECDFCC;
+    margin: 50px;
+    padding: 15px;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.tekstbakgrunnliten{
+    background: #3C3D37;
+    color: #ECDFCC;
+    margin: 50px;
+    padding: 15px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.container{
+    justify-content: center;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.forside{
+    background-color: #697565;
+    color: #ECDFCC;
+    width: 50%;
+    height: 500px;
+    margin-top: 180px;
+    padding: 5px;
+    margin-bottom: 200px;
+}
+
+.fotosirkel {
+    background-color: #3C3D37;
+    color: #ECDFCC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%; 
+    margin-top: 180px;
+    border: 10px solid #697565; 
+    margin-bottom: 200px;
+    position: relative;
+}
+
+.fotosirkel::before {
+    content: "";
+    position: absolute;
+    inset: -15px;
+    border: 20px solid #697565; 
+    border-radius: 50%;
+}
+
+.linje{
+    background-color: red;
+    height: 10px;
+    width: 100%;
+    position: relative;
+}
+
+.seperator {
+    background-color: #697565;
+    color: #ECDFCC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 35px;
+    width: 200px;
+    height: 70px;
+    left: 50%;
+    top: 50%; 
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    z-index: 2; 
+}
+
+
+
+.greenbakgrunn {
+    background-color: #3C3D37;
+    width: 100%;
+    height: 800px;
+    padding: 20px;
+}
+
+.form{
+    display: grid;
+    background-color: #3C3D37;
+    justify-content: center;
+    gap: 20px;
+    color: #ECDFCC;
+}
+
+#navn, #email{
+    display: flex;
+    justify-content: center;
+    background-color: #3C3D37;
+    border-color: #697565;
+    font-size: 30px;
+}
+
+#navn_boks, #email_boks{
+    background-color: #3C3D37;
+    color: #ECDFCC;
+    border-color: #697565;
+    width: 100%;
+    height: auto;
+}
+
+
+#melding{
+    display: flex;
+    justify-content: center;
+    background-color: #3C3D37;
+    border-color: #697565;
+    font-size: 30px;
+}
+
+#melding_boks{
+    background-color: #3C3D37;
+    border-color: #697565;
+    color: #ECDFCC;
+    text-align: left;
+    width: 300px;
+    height: 200px;
+    font-size: 20px;
+    padding: 10px;
+    resize: none;
+}
+
+#litenknapp{
+    display: flex;
+    justify-content: center;
+    background-color:  #3C3D37;
+    border: 5px solid #697565;
+    padding-left: 5px;
+}
+
+#prosjekter{
+    font-size: 30px;
+}
+
+.linje {
+    background-color: red;
+    height: 10px;
+    width: 100%;
+    position: relative;
+}
+
+.prosjekter {
+    display: flex;
+    justify-content: space-around;  
+    margin-top: 160px;  
+}
+
+#prosjekterbokser {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Courier-prime;
+    color: #ECDFCC;
+    font-size: 40px;
+    background-color: #697565; 
+    border: #ECDFCC solid 15px;
+    width: 400px;  
+    height: 400px;
+    margin-bottom: 30px;
+    transition: all;
+    transition-duration: 500ms;
+}
+
+#prosjekterbokser:hover{
+    transform: scale(1.1);
+}
+
+.lesmer {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+#lesmerbokser {
+    background-color: #697565;
+    color: #ECDFCC;
+    border-style: none;
+    font-size: 25px;
+    padding: 30px;
+    cursor: pointer;
+}
+
+.kontaktlesmer {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.erfaring{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ECDFCC;
+    background-color: #697565;
+    align-items: center;
+    margin-top: 50px;
+    font-size: 35px;
+    width: 600px;
+    height: 70px;
+}
+
+.greenbakgrunnrow{
+    display: flex;
+    justify-content: space-around;
+    background-color: #3C3D37;
+    width: 100%;
+    height: 150px;
+    padding: 20px;
+}
+
+.greenbakgrunncolumn{
+    display: flex;
+    justify-content: space-around;
+    background-color: #3C3D37;
+    width: 100%;
+    height: 650px;
+    padding: 20px;
+
+}
+
+#erfaringboks{
+    display: flex;
+    justify-content: space-around;
+    background-color: #697565;
+    color: #ECDFCC;
+    margin-top: 15px;
+    font-size: 25px;
+    padding: 15px;
+    width: 600px;
+    height: 500px;
+}
+
+.ommeg{
+    background-color: #697565;
+    width: 90%;
+    height: 800px;
+    margin: auto;
+    margin-top: 140px;
+    color: #ECDFCC;
+    padding: 60px;
+}
+
+#navnommeg{
+    background-color: #697565;
+    font-size: 50px;
+    padding-left: 200px;
+}
+
+#tekstommeg{
+    background-color: #697565;
+    max-width: 800px;
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: 35px;
+}
+
+.footer{
+    width: 100%;
+    height: 220px;
+    margin-top: 150px;
+    background-color: #3C3D37;
+    padding: 15px;
+}
+
+#footernavn{
+    background-color: #3C3D37;
+    color: #ECDFCC;
+    font-size: 50px;
+    margin-top: 50px;
+    margin-left: 680px;
+}
+
+#footeremail{
+    background-color: #3C3D37;
+    color: #ECDFCC;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: 810px;
+}
+
+#bildetopp{
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 700px;
+    height: 450px;
+    background-color: transparent;
+    border-radius: 100%;
+
+}
+
+#bildebunn{
+    width: 900px;
+    height: 600px;
+    background-color: transparent;
+    margin-left: 850px;
+    position: relative;
+    bottom: 600px;
+}
