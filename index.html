@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Detter koden for headeren på toppen av nettsiden -->
     <div class="header">
         <a class="knapper" href="#hjem">Hjem</a>
         <a class="knapper" href="#kontakt">Kontakt</a>
@@ -15,6 +16,7 @@
         <a class="knapper" href="#ommeg">Om meg</a>
     </div>
 
+    <!-- Koden for front siden - den med teksten og bildet -->
     <div id="hjem" class="container">
         <div class="forside">
             <h1 class="tekst">Hei! Jeg bor i Drammen, NO, og studerer for å bli IT-utvikler. Jeg er engasjert, detaljorientert og motivert for å skape smarte løsninger gjennom teknologi. For meg handler utvikling om mer enn bare kode – det er et verktøy for å bygge noe meningsfullt og fortelle en historie.</h1>
@@ -24,16 +26,22 @@
         </div>
     </div>
 
+
+      <!-- Neste "seksjon", men dette er for den runde boksen med kontakt tekst og linja -->
     <div id="kontakt" class="linje">
             <div class="seperator">Kontakt</div>
         </div>
     </div>
+
+     <!-- Setter inn en grønn bakgrunn -->
 
     <div class="greenbakgrunn">
             <h1 class="tekstbakgrunn">Kontakt meg</h1>
             
             <div class="form">
                 
+                  <!-- Alt informasjon for selve kontakt siden -->
+
                 <div>                
                     <label for="navn" id="navn">Navn</label>
                     <input type="text" id="navn_boks">
@@ -44,7 +52,7 @@
                     <input type="text" id="email_boks">
                 </div>
                 
-                <div>             
+                <div>          
                     <label for="melding" id="melding">Melding</label>
                     <textarea id="melding_boks"></textarea>
                 </div>
@@ -55,9 +63,13 @@
         </div>
     </div>
 
+      <!-- En separator og linjen -->
+
     <div id="prosjekter" class="linje">
         <div class="seperator" id="prosjekter">Prosjekter</div> 
     </div>
+
+      <!-- Koden for å vise frem prosjektene mine -->
 
     <div class="prosjekter">
         <div id="prosjekterbokser">Discord Bot</div>
@@ -73,9 +85,13 @@
         <button id="lesmerbokser">Kontakt</button>
     </div>
 
+      <!-- Ny separator -->
+
     <div id="erfaring" class="linje">
         <div class="seperator">Erfaring</div>
     </div>
+
+      <!-- En ny klasse for den grønne bakgrunnen sånn at det er lettere for meg å formatere og sette inn ting der de skal være -->
 
     <div class="greenbakgrunnrow">
         <div class="erfaring">Programmering</div>
@@ -86,9 +102,13 @@
         <div id="erfaringboks"> - Design av nettsider<br> - Forståelse av Photoshop<br> - Forståelse av illustrator<br> - Forståelse på hvordan kameraer &nbsp;&nbsp;funker og hvordan man bruker dem</div>
     </div>
 
+      <!-- Neste separator, bruker en usynlig "character" siden det var lettere enn å endre på selve koden -->
+
     <div id="ommeg" class="linje">
         <div class="seperator" style="font-size: 27px;">Om meg<br>‎‎ selv</div>
     </div>
+
+      <!-- Siden om meg selv -->
 
     <div class="ommeg">
         <div id="navnommeg">
@@ -100,6 +120,8 @@
         </div>
             <img id="bildebunn" src="DSC_0564 copy.png">
     </div>
+
+      <!-- Og til slutt footeren -->
 
     <div class="footer">
         <div id="footernavn">
